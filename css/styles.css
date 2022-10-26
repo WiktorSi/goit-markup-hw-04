@@ -26,10 +26,10 @@ body {
 
 .link:hover,
 .link:focus {
-    color: blue;
+    color: #2196F3;
 }
 
-.link-contact {
+.link-contact-first, .link-contact-second {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -39,9 +39,11 @@ body {
     text-decoration: none;
 }
 
-.link-contact:hover,
-.link-contact:focus{
-    color: blue;
+.link-contact-first:hover, .link-contact-second:hover,
+.link-contact-first:focus, .link-contact-second:focus{
+    color: #2196F3;
+    stroke: #2196F3;
+    
 }
 
 .filter-btn {
@@ -63,6 +65,7 @@ body {
 .filter-btn:focus{
     color:#FFFFFF;
     background-color: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .main-logo1{
@@ -98,7 +101,7 @@ body {
 }
 
 .motto{
-    background-color: #2F303A;
+    background-image: linear-gradient(#ffffff30, #2F303A66 ),url(../images/Office.jpg);
     color:#FFFFFF;
  }
 
@@ -108,6 +111,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding-bottom: 10px;
     
 }
 
@@ -188,7 +192,6 @@ h1 h2 h4 p ul {
     max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    
 }
 
 .menu-view {
@@ -210,8 +213,7 @@ h1 h2 h4 p ul {
     align-items: center;
     flex-direction:row;
     justify-content: space-between;
-    gap:46px;
-    
+    gap:46px;   
 }
 .contact-list {
     display: flex;
@@ -232,7 +234,7 @@ h1 h2 h4 p ul {
     justify-content: space-between;
     align-items: center;
     padding-top: 94px;
-    
+    gap:30px;
 }
 .first-screen {
     display: flex;
@@ -252,7 +254,6 @@ h1 h2 h4 p ul {
 }
 
 h1{
-    background-color: #2F303A;
     color: #FFFFFF;
     font-weight: 900;
     font-size: 44px;
@@ -333,11 +334,10 @@ h1{
 
 .card-detail{
     width: 270px;
-    height: 368px;
+    height: 428px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    
+    border-radius: 0px 0px 4px 4px;   
 }
 
 .name-view{
@@ -353,11 +353,11 @@ h1{
     justify-content: center;
     align-items: center;
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
 }
 .bottom-box{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content:left;  
 }
 .footer-view{
@@ -442,4 +442,110 @@ h1{
     padding-left: 24px;
     padding-top: 4px;
     padding-bottom: 20px;
+}
+/* zadanie domowe nr 4 */
+
+.envelope-icon{
+    all:unset;
+    padding-right: 10px;
+}
+.envelope-icon:hover,
+.envelope-icon:focus {
+    color: #2196F3;
+    stroke: #2196F3;
+}
+.team-strengths{
+   background-color: #F5F4FA;
+   margin-bottom:30px;
+}
+.icon-view{
+    all:unset;
+    display: block;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+.icon-details:hover , .icon-details:focus{
+    display: flex;
+    --color4: #2196f3;
+    --color5: #ffffff;   
+}
+.social-view{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    justify-content: space-between;
+    padding: 0 30px 18px 32px;
+}
+
+.subsection-title3 {
+    box-sizing: content-box;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 201px;
+    height: 42px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    padding-bottom: 50px;
+    padding-top: 94px;
+}
+.client-view{
+    all:unset;
+    display: block;
+    padding: 17.71px 32px 14.25px 32px ;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;;
+}
+.client-view:hover{
+    border-color: #2196F3;
+    --color2:#2196f3;
+    --color5:#2196f3;
+}
+.customer-base{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.subsection-title4 {
+    box-sizing: content-box;
+    display: flex;
+    text-align:left;
+    text-transform: uppercase;
+    margin: 0 ;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    padding-bottom: 20px;
+}
+.footer-social-view{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content:flex-start;
+}
+.footer-icon-details{
+    display: flex;
+    --color4: #FFFFFF1A;
+    --color5: #ffffff;
+}
+
+.footer-icon-details:hover,
+.footer-icon-details:focus {
+    display: flex;
+    --color4: #2196f3;
+}
+.social-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 72px;
+    padding-left: 70px;
+}
+.project-view:hover, .project-view:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
