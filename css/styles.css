@@ -467,7 +467,8 @@ h1{
 .icon-details:hover , .icon-details:focus{
     display: flex;
     --color4: #2196f3;
-    --color5: #ffffff;   
+    --color5: #ffffff;  
+    cursor: pointer; 
 }
 .social-view{
     display: flex;
@@ -502,6 +503,7 @@ h1{
     border-color: #2196F3;
     --color2:#2196f3;
     --color5:#2196f3;
+    cursor: pointer;
 }
 .customer-base{
     display: flex;
@@ -532,6 +534,7 @@ h1{
     display: flex;
     --color4: #FFFFFF1A;
     --color5: #ffffff;
+    cursor: pointer;
 }
 
 .footer-icon-details:hover,
@@ -548,4 +551,5 @@ h1{
 }
 .project-view:hover, .project-view:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
 }
